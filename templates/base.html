@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <style>
         body.login-background {
-            background-image: url("/static/images/Slika-login.jpg");
+            background-image: url("{{ url_for('static', filename='images/Slika-login.jpg') }}");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
