@@ -104,6 +104,7 @@
     </style>
 </head>
 <body class="{% if request.endpoint == 'login' %}login-background{% endif %}">
+        {% if current_user.is_authenticated %}
         <div style="padding: 10px; text-align: right;">
         <span>Prijavljen kot: {{ current_user.username }}</span>
         <a href="{{ url_for('logout') }}" class="logout-button">Odjava</a>
