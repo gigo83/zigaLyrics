@@ -25,6 +25,8 @@ login_manager.login_view = 'login'
 
 # Database Models
 class User(UserMixin, db.Model):
+    __tablename__ = 'users'  # <- To dodaš tukaj!
+    
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(64), unique=True)
     password_hash = db.Column(db.String(128))
