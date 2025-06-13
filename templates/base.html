@@ -92,6 +92,12 @@
     </style>
 </head>
 <body class="{% if request.endpoint == 'login' %}login-background{% endif %}">
+        <div style="padding: 10px; text-align: right;">
+        <span>Prijavljen kot: {{ current_user.username }}</span>
+        <a href="{{ url_for('logout') }}" style="margin-left: 10px; color: red;">Odjava</a>
+    </div>
+    {% endif %}
+    
     {% block content %}{% endblock %}
     
     <!-- Global Notification System (optional) -->
