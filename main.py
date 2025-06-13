@@ -254,7 +254,12 @@ def init_db():
     with app.app_context():
         db.create_all()
         print("Database initialized!")
-
+        
+@app.route('/init_db')
+def manual_init():
+    with app.app_context():
+        db.create_all()
+    return "Database created!"
 if __name__ == '__main__':
     init_db()
     port = int(os.environ.get("PORT", 5000))  # <- dinamični PORT
