@@ -56,6 +56,12 @@ def load_user(id):
 @app.route('/')
 def index():
     return redirect(url_for('login'))
+    
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('login'))    
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
