@@ -89,12 +89,24 @@
             padding: 15px;
             background-color: #f9f9f9;
         }
+        .logout-button {
+            background-color: #dc3545;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+.logout-button:hover {
+    background-color: #c82333;
+}
     </style>
 </head>
 <body class="{% if request.endpoint == 'login' %}login-background{% endif %}">
         <div style="padding: 10px; text-align: right;">
         <span>Prijavljen kot: {{ current_user.username }}</span>
-        <a href="{{ url_for('logout') }}" style="margin-left: 10px; color: red;">Odjava</a>
+        <a href="{{ url_for('logout') }}" class="logout-button">Odjava</a>
     </div>
     {% endif %}
     
