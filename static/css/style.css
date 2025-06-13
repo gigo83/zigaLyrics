@@ -147,7 +147,7 @@ button {
     width: 300px;
 }
 body.login-background {
-    background-image: url("/static/images/Slika-login.jpg");
+    background-image: url("/static/static/images/Slika-login.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
