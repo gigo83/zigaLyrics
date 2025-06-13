@@ -64,6 +64,8 @@ def login():
         if user and user.check_password(request.form['password']):
             login_user(user)
             return redirect(url_for('songs'))
+        else:
+            return render_template('login.html', error="Napačno uporabniško ime ali geslo.")
     return render_template('login.html')
 
 @app.route('/register', methods=['GET', 'POST'])
