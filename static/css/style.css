@@ -2,7 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background: #f5f5f5;
+    background-image: url("/static/images/202cd3c0-cde0-4fb5-9b46-e05c3e80291f.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
 .chord {
