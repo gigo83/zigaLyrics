@@ -2,11 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-image: url("/static/images/202cd3c0-cde0-4fb5-9b46-e05c3e80291f.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
     color: white;
 }
 
@@ -150,5 +145,13 @@ button {
     border: 1px solid #ddd;
     border-radius: 4px;
     width: 300px;
+}
+body.login-background {
+    background-image: url("/static/images/Slika-login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
