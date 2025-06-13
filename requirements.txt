@@ -4,3 +4,4 @@ eventlet
 Flask-Login
 Flask-SQLAlchemy
 gunicorn
+psycopg2-binary
